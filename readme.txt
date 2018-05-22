@@ -9,11 +9,15 @@ _____
 
 3-apply the parallel code of image equalization in the GPU on the gray image and calcualte the time of compution
 
-4-convert the color image to hsv image
+4-apply equalization on every axis (r, g, b) of the color image on the cpu then write it on the disk
 
-5-apply the serial code of image equalization in the CPU on the hsl image and calcuate the time of computation
+5-convert the color image into hsv color system then apply equal on v values on the cpu then write the image after convert it to rgb
 
-6-apply the parallel code of image equalization in the GPU on the color image and calcualte the time of compution
+6-convert the color image into yuv color system then apply equal on y values on the cpu then write the image after convert it to rgb
+
+7-apply the parallel code of image equalization in the GPU on the color image. equalize every pixel with thread in the GPU
+
+8- show the time that every operation take
 
 
 * results of applying these step on color image (in-color.jpg) and gray scale image(in-grayscale.jpg) both are 8 bpp
