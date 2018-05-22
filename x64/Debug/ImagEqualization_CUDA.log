@@ -1,0 +1,35 @@
+﻿Build started 5/22/2018 12:38:37 PM.
+     1>Project "C:\Users\hp\Desktop\ImagEqualization_CUDA\ImagEqualization_CUDA\ImagEqualization_CUDA.vcxproj" on node 2 (Build target(s)).
+     1>AddCudaCompileDeps:
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\x86_amd64\cl.exe /E /nologo /showIncludes /TP /D__CUDACC__ /DWIN32 /DWIN64 /D_DEBUG /D_CONSOLE /D_MBCS /I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v9.1\include" /I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v9.1\bin" /I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v9.1\include" /I. /FIcuda_runtime.h /c C:\Users\hp\Desktop\ImagEqualization_CUDA\ImagEqualization_CUDA\kernel.cu 
+     1>Project "C:\Users\hp\Desktop\ImagEqualization_CUDA\ImagEqualization_CUDA\ImagEqualization_CUDA.vcxproj" (1) is building "C:\Users\hp\Desktop\ImagEqualization_CUDA\ImagEqualization_CUDA\ImagEqualization_CUDA.vcxproj" (1:2) on node 2 (CudaBuildCore target(s)).
+     1>CudaBuildCore:
+         Compiling CUDA source file kernel.cu...
+         cmd.exe /C "C:\Users\hp\AppData\Local\Temp\tmpcb1b26e1766b465a9521650f5170c00a.cmd"
+         "C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v9.1\bin\nvcc.exe" -gencode=arch=compute_30,code=\"sm_30,compute_30\" --use-local-env --cl-version 2012 -ccbin "C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\x86_amd64" -x cu  -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v9.1\include" -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v9.1\include"  -G   --keep-dir x64\Debug -maxrregcount=0  --machine 64 --compile -cudart static  -g   -DWIN32 -DWIN64 -D_DEBUG -D_CONSOLE -D_MBCS -Xcompiler "/EHsc /W3 /nologo /Od  /Zi /RTC1 /MDd " -o x64\Debug\kernel.cu.obj "C:\Users\hp\Desktop\ImagEqualization_CUDA\ImagEqualization_CUDA\kernel.cu"
+         
+         C:\Users\hp\Desktop\ImagEqualization_CUDA\ImagEqualization_CUDA>"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v9.1\bin\nvcc.exe" -gencode=arch=compute_30,code=\"sm_30,compute_30\" --use-local-env --cl-version 2012 -ccbin "C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\x86_amd64" -x cu  -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v9.1\include" -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v9.1\include"  -G   --keep-dir x64\Debug -maxrregcount=0  --machine 64 --compile -cudart static  -g   -DWIN32 -DWIN64 -D_DEBUG -D_CONSOLE -D_MBCS -Xcompiler "/EHsc /W3 /nologo /Od  /Zi /RTC1 /MDd " -o x64\Debug\kernel.cu.obj "C:\Users\hp\Desktop\ImagEqualization_CUDA\ImagEqualization_CUDA\kernel.cu" 
+     1>c:\users\hp\desktop\imagequalization_cuda\imagequalization_cuda\stb-master\stb_image.h(3948): warning : variable "old_limit" was set but never used
+     1>c:\users\hp\desktop\imagequalization_cuda\imagequalization_cuda\stb-master\stb_image.h(4827): warning : variable "idata_limit_old" was set but never used
+     1>c:\users\hp\desktop\imagequalization_cuda\imagequalization_cuda\stb-master\stb_image.h(3948): warning : variable "old_limit" was set but never used
+     1>c:\users\hp\desktop\imagequalization_cuda\imagequalization_cuda\stb-master\stb_image.h(4827): warning : variable "idata_limit_old" was set but never used
+         kernel.cu
+     1>Done Building Project "C:\Users\hp\Desktop\ImagEqualization_CUDA\ImagEqualization_CUDA\ImagEqualization_CUDA.vcxproj" (CudaBuildCore target(s)).
+     1>Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\x86_amd64\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\hp\Desktop\ImagEqualization_CUDA\x64\Debug\ImagEqualization_CUDA.exe" /INCREMENTAL /NOLOGO /LIBPATH:"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v9.1\lib\x64" cudart.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:\Users\hp\Desktop\ImagEqualization_CUDA\x64\Debug\ImagEqualization_CUDA.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\hp\Desktop\ImagEqualization_CUDA\x64\Debug\ImagEqualization_CUDA.lib" /MACHINE:X64 x64\Debug\kernel.cu.obj
+         "x64\Debug\contrast-enhancement.obj"
+         "x64\Debug\histogram-equalization.obj"
+         ImagEqualization_CUDA.vcxproj -> C:\Users\hp\Desktop\ImagEqualization_CUDA\x64\Debug\ImagEqualization_CUDA.exe
+       PostBuildEvent:
+         echo copy "C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v9.1\bin\cudart*.dll" "C:\Users\hp\Desktop\ImagEqualization_CUDA\x64\Debug\"
+         copy "C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v9.1\bin\cudart*.dll" "C:\Users\hp\Desktop\ImagEqualization_CUDA\x64\Debug\"
+         :VCEnd
+         copy "C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v9.1\bin\cudart*.dll" "C:\Users\hp\Desktop\ImagEqualization_CUDA\x64\Debug\"
+         C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v9.1\bin\cudart32_91.dll
+         C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v9.1\bin\cudart64_91.dll
+                 2 file(s) copied.
+     1>Done Building Project "C:\Users\hp\Desktop\ImagEqualization_CUDA\ImagEqualization_CUDA\ImagEqualization_CUDA.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:04.57
